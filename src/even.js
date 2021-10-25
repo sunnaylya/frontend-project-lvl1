@@ -16,7 +16,7 @@ const brainEven = () => {
       if (gamerAnswer === 'yes') {
         console.log('Correct!');
       } else {
-        console.log(`${gamerAnswer} is wrong answer ;(. Correct answer was 'yes.'`);
+        console.log(`${gamerAnswer} is wrong answer ;(. Correct answer was "yes".`);
         console.log(`Let's try again, ${name}!`);
         return;
       }
@@ -25,7 +25,7 @@ const brainEven = () => {
       if (gamerAnswer === 'no') {
         console.log('Correct!');
       } else {
-        console.log(`${gamerAnswer} is wrong answer ;(. Correct answer was 'no'.`);
+        console.log(`${gamerAnswer} is wrong answer ;(. Correct answer was "no".`);
         console.log(`Let's try again, ${name}!`);
         return;
       }
