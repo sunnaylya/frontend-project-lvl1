@@ -85,4 +85,35 @@ const calcFunc = () => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export { generalFunc, calcFunc, evenFunc };
+const gcdFunc = () => {
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < 3; i++) {
+    let getRandNum1 = Math.floor(Math.random() * 100) + 1;
+    let getRandNum2 = Math.floor(Math.random() * 100) + 1;
+    console.log(`Question: ${getRandNum1}${getRandNum2}`);
+    const gamerAnswer = readlineSync.question('Your answer: ');
+    const getGcd = () => {
+      while (getRandNum1 !== getRandNum2) {
+        if (getRandNum1 > getRandNum2) {
+          getRandNum1 -= getRandNum2;
+        } else {
+          getRandNum2 -= getRandNum1;
+        }
+      }
+      return getRandNum1;
+    };
+    const randomGcd = getGcd();
+    if (gamerAnswer === randomGcd) {
+      console.log('Correct!');
+    } else {
+      console.log(`${gamerAnswer} is wrong answer ;(. Correct answer was ${randomGcd}.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
+    }
+  }
+  console.log(`Congratulations, ${name}!`);
+};
+
+export {
+  generalFunc, calcFunc, evenFunc, gcdFunc,
+};
