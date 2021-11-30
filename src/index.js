@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 import _ from 'lodash';
 
 let name = 0;
-
 const generalFunc = () => {
   console.log('Welcome to the Brain Games!');
   name = readlineSync.question('May I have your name? ');
@@ -49,6 +48,7 @@ const calcFunc = () => {
       console.log(`Question: ${getRandNum1} + ${getRandNum2}`);
       const gamerAnswer = readlineSync.question('Your answer: ');
       // const gamerAnswer = readlineSync.question('Your answer: ');
+      // eslint-disable-next-line eqeqeq
       if (gamerAnswer == sum) {
         console.log('Correct!');
       } else {
@@ -60,6 +60,7 @@ const calcFunc = () => {
       const subtract = getRandNum1 - getRandNum2;
       console.log(`Question: ${getRandNum1} - ${getRandNum2}`);
       const gamerAnswer = readlineSync.question('Your answer: ');
+      // eslint-disable-next-line eqeqeq
       if (gamerAnswer == subtract) {
         console.log('Correct!');
       } else {
@@ -71,6 +72,7 @@ const calcFunc = () => {
       const multipl = getRandNum1 * getRandNum2;
       console.log(`Question: ${getRandNum1} * ${getRandNum2}`);
       const gamerAnswer = readlineSync.question('Your answer: ');
+      // eslint-disable-next-line eqeqeq
       if (gamerAnswer == multipl) {
         console.log('Correct!');
       } else {
