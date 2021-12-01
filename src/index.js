@@ -116,6 +116,12 @@ const gcdFunc = () => {
   console.log(`Congratulations, ${name}!`);
 };
 
+
+
+const progressionFunc = () => {
+
+}
+
 export {
-  generalFunc, calcFunc, evenFunc, gcdFunc,
+  generalFunc, calcFunc, evenFunc, gcdFunc, progressionFunc,
 };
