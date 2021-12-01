@@ -92,7 +92,6 @@ const gcdFunc = () => {
     let getRandNum2 = Math.floor(Math.random() * 100) + 1;
     console.log(`Question: ${getRandNum1} ${getRandNum2}`);
     const gamerAnswer = readlineSync.question('Your answer: ');
-    
     const getGcd = () => {
       while (getRandNum1 !== getRandNum2) {
         if (getRandNum1 > getRandNum2) {
