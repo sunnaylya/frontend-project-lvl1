@@ -4,3 +4,6 @@
 [![linter Actions Status](https://github.com/sunnaylya/frontend-project-lvl1/workflows/linter/badge.svg)](https://github.com/sunnaylya/frontend-project-lvl1/actions)
 
 https://asciinema.org/a/QtgbAzEl5deMInUNLpYYl3i0X
+
+Brain-gcd:
+https://asciinema.org/a/vJol3nQ7qVhrs7NEQGNbwW776
