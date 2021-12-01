@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import _ from 'lodash';
 
 let name = 0;
+
 const generalFunc = () => {
   console.log('Welcome to the Brain Games!');
   name = readlineSync.question('May I have your name? ');
@@ -47,7 +48,6 @@ const calcFunc = () => {
       const sum = getRandNum1 + getRandNum2;
       console.log(`Question: ${getRandNum1} + ${getRandNum2}`);
       const gamerAnswer = readlineSync.question('Your answer: ');
-      // const gamerAnswer = readlineSync.question('Your answer: ');
       // eslint-disable-next-line eqeqeq
       if (gamerAnswer == sum) {
         console.log('Correct!');
@@ -90,8 +90,9 @@ const gcdFunc = () => {
   for (let i = 0; i < 3; i++) {
     let getRandNum1 = Math.floor(Math.random() * 100) + 1;
     let getRandNum2 = Math.floor(Math.random() * 100) + 1;
-    console.log(`Question: ${getRandNum1}${getRandNum2}`);
+    console.log(`Question: ${getRandNum1} ${getRandNum2}`);
     const gamerAnswer = readlineSync.question('Your answer: ');
+    
     const getGcd = () => {
       while (getRandNum1 !== getRandNum2) {
         if (getRandNum1 > getRandNum2) {
@@ -102,8 +103,10 @@ const gcdFunc = () => {
       }
       return getRandNum1;
     };
+
     const randomGcd = getGcd();
-    if (gamerAnswer === randomGcd) {
+    // eslint-disable-next-line eqeqeq
+    if (gamerAnswer == randomGcd) {
       console.log('Correct!');
     } else {
       console.log(`${gamerAnswer} is wrong answer ;(. Correct answer was ${randomGcd}.`);
